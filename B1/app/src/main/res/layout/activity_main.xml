@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a positive integer"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioEven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Even Numbers" />
+
+        <RadioButton
+            android:id="@+id/radioOdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odd Numbers" />
+
+        <RadioButton
+            android:id="@+id/radioSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square Numbers" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/showButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone" />
+</LinearLayout>
